@@ -2,9 +2,14 @@ package Game;
 
 public class StaffoftheDead implements Weapon
 {
+    private Integer damage = 35;
     @Override
-    public void whatWeaponHeWearing()
+    public void useWeapon()
     {
-        System.out.println("\nWeapon: Staff of the Dead");
+        System.out.println("Weapon: Staff of the Dead");
+    }
+
+    public Integer getDamage() {
+        return damage;
     }
 }

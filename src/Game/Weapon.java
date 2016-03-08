@@ -5,5 +5,5 @@ package Game;
  */
 public interface Weapon
 {
-    void whatWeaponHeWearing();
+    void useWeapon();
 }

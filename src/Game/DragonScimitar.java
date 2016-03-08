@@ -5,10 +5,14 @@ package Game;
  */
 public class DragonScimitar implements Weapon
 {
+    private Integer damage = 20;
 
     @Override
-    public void whatWeaponHeWearing() {
-        System.out.println("\nWeapon: Dragon Scimitar");
+    public void useWeapon() {
+        System.out.println("Weapon: Dragon Scimitar");
 
+    }
+    public Integer getDamage() {
+        return damage;
     }
 }
