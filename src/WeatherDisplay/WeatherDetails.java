@@ -8,7 +8,7 @@ public class WeatherDetails
     private Double temperatura;
     private Double humitat;
     private Double pressio;
-    public void update(Double temperatura, Double humitat, Double pressio)
+    protected void update(Double temperatura, Double humitat, Double pressio)
     {
         this.temperatura=temperatura;
         this.humitat=humitat;
@@ -16,39 +16,30 @@ public class WeatherDetails
         notifyMembers();
     }
 
-
-    private Boolean isMember(Member member)
-    {
-        if (members.contains(member))
-        {
-            return true;
-        }
-        else return false;
-    }
-
     public Double getTemperatura(Member member)
     {
-        if (isMember(member))
-        {
-            return temperatura;
-        }
-        return null;
+        if (members.contains(member)){ return temperatura;}
+        else{return null;}
     }
     public Double getHumitat(Member member)
     {
-        if (isMember(member))
-        {
-            return humitat;
-        }
-        return null;
+        if (members.contains(member)){ return humitat;}
+        else{return null;}
     }
-    public Double getPressio()
+    public Double getPressio(Member member)
     {
-        return pressio;
+        if (members.contains(member)){ return pressio;}
+        else{return null;}
     }
     public void notifyMembers()
     {
-
+        for (Member member : members)
+        {
+            member.notifyMember();
+        }
     }
-
+    public void subscribe(Member member)
+    {
+        members.add(member);
+    }
 }
