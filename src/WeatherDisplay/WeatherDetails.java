@@ -24,8 +24,6 @@ public class WeatherDetails
             member.notifyMember();
         }
     }
-
-
     public Double getTemperatura(Member member)
     {
         if (members.contains(member)){ return temperatura;}
