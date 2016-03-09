@@ -1,7 +1,5 @@
 package WeatherDisplay;
-
 import java.util.ArrayList;
-
 public class WeatherDetails
 {
     private ArrayList<Member> members = new ArrayList<>();
@@ -15,6 +13,18 @@ public class WeatherDetails
         this.pressio=pressio;
         notifyMembers();
     }
+    public void subscribe(Member member)
+    {
+        members.add(member);
+    }
+    public void notifyMembers()
+    {
+        for (Member member : members)
+        {
+            member.notifyMember();
+        }
+    }
+
 
     public Double getTemperatura(Member member)
     {
@@ -30,16 +40,5 @@ public class WeatherDetails
     {
         if (members.contains(member)){ return pressio;}
         else{return null;}
-    }
-    public void notifyMembers()
-    {
-        for (Member member : members)
-        {
-            member.notifyMember();
-        }
-    }
-    public void subscribe(Member member)
-    {
-        members.add(member);
     }
 }
