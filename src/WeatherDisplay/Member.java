@@ -5,7 +5,7 @@ public class Member
     Integer id;
     String username;
     String password;
-    public Member( WeatherDetails weatherDetails, Integer id, String username, String password)
+    public Member(WeatherDetails weatherDetails, Integer id, String username, String password)
     {
         this.weatherDetails=weatherDetails;
         this.id=id;
