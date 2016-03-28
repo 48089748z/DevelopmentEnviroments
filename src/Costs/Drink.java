@@ -1,9 +1,6 @@
 package Costs;
 import Costs.Ingredients.Ingredients;
 import java.util.ArrayList;
-/**
- * Created by 48089748z on 15/03/16.
- */
 public class Drink
 {
     Double cost= 0.0;

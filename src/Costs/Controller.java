@@ -1,11 +1,7 @@
 package Costs;
 import Costs.Ingredients.*;
 import Costs.Predefined.MilkCoffee;
-
 import java.util.ArrayList;
-/**
- * Created by 48089748z on 15/03/16.
- */
 public class Controller
 {
     public static void main(String[] args)
@@ -35,6 +31,11 @@ public class Controller
         tea.desc();
         tea.cost();
 
-       // Drink gintonic = new
+        ingredients.clear();
+        ingredients.add(new Alcohol());
+        ingredients.add(new Tonic());
+        Drink gintonic = new Drink(ingredients);
+        gintonic.desc();
+        gintonic.cost();
     }
 }
