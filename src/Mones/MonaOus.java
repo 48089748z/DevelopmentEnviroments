@@ -1,5 +1,4 @@
 package Mones;
-
 public class MonaOus extends Mona
 {
 	public MonaOus()

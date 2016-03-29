@@ -1,6 +1,6 @@
 package Mones;
-
-public class MonaXocolata extends Mona {
+public class MonaXocolata extends Mona
+{
 	public MonaXocolata()
 	{
 		nom = "Mona de xocolata";

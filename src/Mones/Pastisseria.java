@@ -1,5 +1,4 @@
 package Mones;
-
 public class Pastisseria
 {
 	Mona mona;

@@ -1,5 +1,4 @@
 package Mones;
-
 public class MonaPokemon extends Mona
 {
 	public MonaPokemon()
