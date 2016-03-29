@@ -11,30 +11,25 @@ public class Controller
 
         //TAMBE SE LI PODEN FICAR DE NOUS
         predefinit.ingredients.add(new Sugar());
-
-        //OUTPRINTS
         predefinit.desc();
         predefinit.cost();
 
         //TAMBE PODEM CREAR DRINKS PERSONALITZATS DESDE 0 AMB ELS INGREDIENTS QUE VOLGUEM
-        ArrayList<Ingredients> ingredients = new ArrayList<>();
-        ingredients.add(new Milk());
-        ingredients.add(new Coffee());
-        Drink coffee = new Drink(ingredients);
+        Drink coffee = new Drink();
+        coffee.ingredients.add(new Milk());
+        coffee.ingredients.add(new Coffee());
         coffee.desc();
         coffee.cost();
 
         //ES VALID PER QUALSEVOL TIPUS DE BEGUDA
-        ingredients.clear();
-        ingredients.add(new Weed());
-        Drink tea = new Drink(ingredients);
+        Drink tea = new Drink();
+        tea.ingredients.add(new Weed());
         tea.desc();
         tea.cost();
 
-        ingredients.clear();
-        ingredients.add(new Alcohol());
-        ingredients.add(new Tonic());
-        Drink gintonic = new Drink(ingredients);
+        Drink gintonic = new Drink();
+        gintonic.ingredients.add(new Alcohol());
+        gintonic.ingredients.add(new Tonic());
         gintonic.desc();
         gintonic.cost();
     }
