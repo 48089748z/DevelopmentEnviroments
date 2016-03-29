@@ -5,20 +5,8 @@ package Mones;
  */
 public class PasstisseriaMadrid extends Pastisseria
 {
-    @Override
-    public Mona encarregarMona(String type)
-    {
-        return super.encarregarMona(type);
-    }
-    @Override
-    public Mona crearMona(String type)
-    {
-        return super.crearMona(type);
-    }
-
     public PasstisseriaMadrid()
     {
-        System.out.println("PASSTISSERIA MADRID");
-        mona.details();
+        location = "MADRID";
     }
 }

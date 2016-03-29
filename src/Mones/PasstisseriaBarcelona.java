@@ -7,7 +7,6 @@ public class PasstisseriaBarcelona extends Pastisseria
 {
     public PasstisseriaBarcelona()
     {
-        System.out.println("PASSTISSERIA BARCELONA");
-         mona.details();
+        location = "BARCELONA";
     }
 }

@@ -13,7 +13,7 @@ public class Controller
 		mona = pastisseria.encarregarMona("xocolata");
 		mona.details();
 
-		pastisseria = new PasstisseriaBarcelona();
+		pastisseria = new Pastisseria();
         mona = pastisseria.encarregarMona("pokemon");
 		mona.details();
 	}

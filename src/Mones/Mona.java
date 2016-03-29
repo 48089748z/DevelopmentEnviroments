@@ -25,6 +25,6 @@ public abstract class Mona
 		{
 			display.append(decoracions.get(i) + "\n");
 		}
-		System.out.println("Hem encarregat una " + nom +"\n"+display+"\n-------------------------------------------------");
+		System.out.println("Hem encarregat una " + nom +"\n"+display+"\n----------------------------------------------------");
 	}
 }
