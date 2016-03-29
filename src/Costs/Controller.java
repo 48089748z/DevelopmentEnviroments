@@ -1,16 +1,17 @@
 package Costs;
 import Costs.Ingredients.*;
 import Costs.Predefined.MilkCoffee;
-import java.util.ArrayList;
+
 public class Controller
 {
+    //A MILLORAR
+    //Atributs privats.
+    //Afegir preu al afegir ingredient, no calcular-ho tot al final.
     public static void main(String[] args)
     {
-        //CLASE PREDEFINIDA DE CAFE AMB LLET, AQUESTA JA CONTINDRA ELS DOS INGREDIENTS QUAN LA INSTANCIEM
+        //CLASE PREDEFINIDA DE CAFE AMB LLET, AQUESTA JA CONTINDRA DOS INGREDIENTS QUAN LA INSTANCIEM
         MilkCoffee predefinit = new MilkCoffee();
-
-        //TAMBE SE LI PODEN FICAR DE NOUS
-        predefinit.ingredients.add(new Sugar());
+        predefinit.ingredients.add(new Sugar());    //TAMBE SE LI PODEN FICAR DE NOUS
         predefinit.desc();
         predefinit.cost();
 
@@ -28,7 +29,7 @@ public class Controller
         tea.cost();
 
         Drink gintonic = new Drink();
-        gintonic.ingredients.add(new Alcohol());
+        gintonic.ingredients.add(new Ginger());
         gintonic.ingredients.add(new Tonic());
         gintonic.desc();
         gintonic.cost();

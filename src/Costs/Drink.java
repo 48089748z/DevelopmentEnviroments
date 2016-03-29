@@ -6,10 +6,6 @@ public class Drink
     Double cost= 0.0;
     String desc = "\n\nTHIS DRINK CONTAINS\n";
     public ArrayList<Ingredients> ingredients = new ArrayList<>();
-    public Drink(ArrayList<Ingredients> ingredients)
-    {
-        this.ingredients = ingredients;
-    }
     public Drink(){}
     public void cost()
     {
